@@ -6,7 +6,7 @@ Airlines receive thousands of written feedback than anyone can read and manually
 This project classifies airline reviews as Negative, Neutral or Positive so feedback can be monitored automatically. The final model is provided through a small Streamlit app.
 
 
-Live Demo: 
+Live Demo: https://airline-sentiment-analysis-gravionic.streamlit.app/
 
 ---
  
