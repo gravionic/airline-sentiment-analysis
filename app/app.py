@@ -2,6 +2,7 @@ import streamlit as st
 import joblib as jl
 import pandas as pd
 import string
+import nltk
 import plotly.express as px
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
@@ -35,7 +36,8 @@ if col3.button("Positive"):
 review = st.text_area("Enter an airline review:", height=150, key="review")
 
 # Preprocessing
-
+nltk.download('stopwords')
+nltk.download('punkt_tab')
 stop_words = set(stopwords.words('english'))
 
 negations = {"no", "not", "nor", "never", "don't", "doesn't", "didn't", "isn't", "wasn't", "can't", "won't"}
